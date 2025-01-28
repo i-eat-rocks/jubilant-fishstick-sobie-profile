@@ -6,7 +6,19 @@
     <title>EJS Test</title>
 </head>
 <body>
-    <h1>whoop whoop</h1>
+    <h1><%=pageTitle%></h1>
+    
+    <form method="GET" action="/GETName">
+        <input type="text" name="yaName"> 
+        <input type="submit" value="save ya name">
+    </form>
+
+
+    <form method="POST" action="/testMyName">
+        <input type="text" name="yaName"> 
+        <input type="submit" value="post action idk">
+    </form>
+
     <strong><a href="/">go back</a></strong>
 </body>
 </html>
